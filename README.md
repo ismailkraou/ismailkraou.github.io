@@ -2,7 +2,7 @@
 <p align="center"><i>A portfolio of ismailkraou</i></p>
 <div align="center">
  <a href="https://ismailkraou.github.io/">
-  <img src="./imgs/screencapture.png" alt="portfolio screencapture" />
+  <img src="./imgs/screencapture.jpeg" alt="portfolio screencapture" />
  </a>
 </div>
 
