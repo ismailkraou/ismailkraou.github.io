@@ -249,7 +249,7 @@ clear: both;
     position: relative;
 
     .aboutme-title-title1{
-        font-size: 55px;
+        font-size: 47px;
         line-height: 63.36px;
         font-weight: 800;
         color: var(--primary-color);
@@ -332,7 +332,11 @@ clear: both;
 /* responsive */
 @media screen and (max-width: 1200px) {}
 
-@media screen and (max-width: 750px) {}
+@media screen and (max-width: 780px) {
+    .aboutme-title .aboutme-title-title1 {
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 450px) {
     .aboutme-title .aboutme-title-title1 {
