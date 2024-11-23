@@ -1,370 +1,665 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
-
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ismail K. - Junior Web Developer | Welcome to my digital playground! Explore my portfolio and let's create magic together.">
-    <meta name="keywords" content="Ismail K., web developer, junior web developer, web development, portfolio, html, css, js, javascript, responsive, WordPress, php, mysql, freelance, remote, a distance, work, home, web, imouzzer kandar, casablanca, fes, marakech, morocco, france, fr, en, arabe, eng, google, software">
-    <meta name="author" content="Ismail K.">
-    <title>Ismail K. - Junior Web Developer</title>
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"/>
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles.css" />
+    <meta
+      name="description"
+      content="Ismail K. - Junior Web Developer | Welcome to my digital playground! Explore my portfolio and let's create magic together."
+    />
+    <meta
+      name="keywords"
+      content="Ismail K., web developer, junior web developer, web development, portfolio, html, css, js, javascript, responsive, WordPress, php, mysql, freelance, remote, a distance, work, home, web, imouzzer kandar, casablanca, fes, marakech, morocco, france, fr, en, arabe, eng, google, software"
+    />
+    <meta name="author" content="Ismail K." />
+    <title>Ismail K. - Web Developer</title>
 
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="modernizr.js"></script>
+    <script src="pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <body>
 
-    <!-- home and header -->
-    <div class="home" id="home"></div>
-    <header class="header">
-      <div class="container">
-        <img class="header-logo" loading="lazy" alt="" src="./public/logo@2x.png"/>
+  <body id="top">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
 
-        <div class="header-navbar-wrapper">
-          <nav class="header-navbar">
-            <div class="header-navbar-item"><a class="navbar-item-link" href="#home">Home</a></div>
-            <div class="header-navbar-item"><a class="navbar-item-link" href="#projects">Projects</a></div>
-            <div class="header-navbar-item"><a class="navbar-item-link" href="#experiences">Experience</a></div>
-            <div class="header-navbar-item"><a class="navbar-item-link" href="#contact">Contact</a></div>
-          </nav>
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="public/logo@2x.png" alt="Homepage" />
+        </a>
+      </div>
+
+      <nav class="header-nav-wrap">
+        <ul class="header-main-nav">
+          <li class="current">
+            <a class="smoothscroll" href="#intro" title="intro">Intro</a>
+          </li>
+          <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+          <li>
+            <a class="smoothscroll" href="#services" title="skills">Skills</a>
+          </li>
+          <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+          <li>
+            <a class="smoothscroll" href="#contact" title="contact us"
+              >Say Hello</a
+            >
+          </li>
+        </ul>
+
+        <ul class="header-social">
+          <li>
+            <a href="https://dribbble.com/ismailkraou" target="_blank"
+              ><i class="fab fa-dribbble" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/ismailkraou" target="_blank"
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+    <!-- end s-header -->
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+      <div class="row intro-content">
+        <div class="column large-9 mob-full intro-text">
+          <h3>Hello, I'm Ismail K.</h3>
+          <h1>
+            Frontend Developer <br />
+            and Web Developer <br />
+            Based In Morocco.
+          </h1>
+        </div>
+
+        <div class="intro-scroll">
+          <a href="#about" class="intro-scroll-link smoothscroll">
+            Scroll For More
+          </a>
+        </div>
+
+        <div class="intro-grid"></div>
+        <div class="intro-pic"></div>
+      </div>
+      <!-- end row -->
+    </section>
+    <!-- end intro -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="about-me">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">About Me</h2>
+          </div>
+        </div>
+
+        <div class="row about-me__content" data-aos="fade-up">
+          <div class="column large-full about-me__text">
+            <p class="lead">
+              I'm <strong>Ismail K.</strong>, a
+              <strong>web developer from Morocco</strong>. I'm all about tech –
+              from the latest trends to the coolest web development techniques,
+              I'm constantly diving in to learn something new.
+            </p>
+
+            <p>
+              With more than 5 years of experience crafting dynamic websites and
+              web apps, I'm handy with HTML5, CSS3, JavaScript, React.js, and
+              I'm venturing into PHP too. I've got a soft spot for WordPress and
+              can handle SQL and MySQL databases like a pro.
+            </p>
+
+            <p>
+              But it's not just about the code for me; I'm all about creating
+              experiences people love to use, paying close attention to every
+              detail. When I'm not coding, I'm probably out enjoying nature or
+              spending time with loved ones.
+            </p>
+
+            <p>
+              Welcome to my digital playground! Feel free to explore, and let's
+              chat if you're up to something cool – maybe we can make magic
+              together!
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-me__buttons">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="https://www.linkedin.com/in/ismailkraou/"
+              class="btn btn--stroke full-width"
+              >Hire Me</a
+            >
+          </div>
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="mailto:ismail.kraou@gmail.com"
+              class="btn btn--primary full-width"
+              >email me</a
+            >
+          </div>
         </div>
       </div>
-    </header>
+      <!-- end about-me -->
+    </section>
+    <!-- end s-about -->
 
-    <!-- main page -->
-    <main class="main-page">
-      <section class="section aboutme">
-        <div class="container">
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+      <div class="shadow-overlay"></div>
 
-          <!-- avatar -->
-          <div class="aboutme-avatar">
-            <div class="avatar-background"></div>
-            <img class="avatar-icon" loading="lazy" alt="ISMAIL KRAOU Frontend developper" src="./public/avatar@2x.png"/>
-          </div>
-
-          <!-- title -->
-          <div class="aboutme-title">
-            <h1 class="aboutme-title-title1">
-              <p class="aboutme-title-title1-first">ISMAIL KRAOU</p>
-              <p class="aboutme-title-title1-last">web developer | Frontend developer</p>
-            </h1>
-          </div>
-
-          <!-- description -->
-          <div class="aboutme-descr">
-            <p class="aboutme-descr-p">
-              I'm <strong>Ismail K.</strong>, a <strong>junior web developer from Imouzzer Kandar, Morocco</strong>. <br>I'm all about tech – from the latest trends to the coolest web development techniques, I'm constantly diving in to learn something new.
-            </p>
-            <p class="aboutme-descr-p">
-              With more than 5 years of experience crafting dynamic websites and web apps, I'm handy with HTML5, CSS3, JavaScript, React.js, and I'm venturing into PHP too. I've got a soft spot for WordPress and can handle SQL and MySQL databases like a pro.
-            </p>
-            <p class="aboutme-descr-p">
-              But it's not just about the code for me; I'm all about creating experiences people love to use, paying close attention to every detail. When I'm not coding, I'm probably out enjoying nature or spending time with loved ones.
-            </p>
-            <p class="aboutme-descr-p">
-              Welcome to my digital playground! Feel free to explore, and let's chat if you're up to something cool – maybe we can make magic together!
-            </p>
-          </div>
-
-          <!-- actions -->
-          <div class="aboutme-action">
-            <div class="aboutme-action-buttons">
-              <a href="#contact" class="aboutme-action-buttons-btn">Get In Touch</a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-      <section class="section experience">
-        <div class="container">
-
-          <!-- title -->
-          <div class="experience-title">
-            <h2 class="experience-title-title2">
-              <p class="experience-title-title2-first">EXPERIENCE WITH</p>
-              <p class="experience-title-title2-last">SKILLS</p>
-            </h2>
-          </div>
-
-          <!-- skills -->
-          <div class="experience-skills">
-            <img class="experience-skills-icon" alt="skills html" src="./public/skills/html.svg"/>
-            <img class="experience-skills-icon" alt="skills css" src="./public/skills/css.svg"/>
-            <img class="experience-skills-icon" alt="skills bootstrap" src="./public/skills/bootstrap.svg"/>
-            <img class="experience-skills-icon" alt="skills scss" src="./public/skills/scss.svg"/>
-            <img class="experience-skills-icon" alt="skills javascript" src="./public/skills/javascript.svg"/>
-            <img class="experience-skills-icon" alt="skills jquery" src="./public/skills/jquery.svg"/>
-            <img class="experience-skills-icon" alt="skills react-js" src="./public/skills/react-js.svg"/>
-            <img class="experience-skills-icon" alt="skills svelte" src="./public/skills/svelte.svg"/>
-            <img class="experience-skills-icon" alt="skills php" src="./public/skills/php.svg"/>
-            <img class="experience-skills-icon" alt="skills mysql" src="./public/skills/mysql.svg"/>
-            <img class="experience-skills-icon" alt="skills wordpress" src="./public/skills/wordpress.svg"/>
-            <img class="experience-skills-icon" alt="skills elementor" src="./public/skills/elementor.svg"/>
-            <img class="experience-skills-icon" alt="skills figma" src="./public/skills/figma_logo_icon.svg"/>
-            <img class="experience-skills-icon" alt="skills adobe XD" src="./public/skills/xd_icon.svg"/>
-          </div>
-        
-        </div>
-      </section>
-
-
-      <section id="projects" class="section projects" >
-        <div class="container">
-
-          <!-- title -->
-          <div class="projects-title">
-            <h2 class="projects-title-title2">
-              <p class="projects-title-title2-first">Projects</p>
-              <p class="projects-title-title2-last">PORTFOLIO</p>
-            </h2>
-          </div>
-
-          <!-- skills -->
-          <div class="projects-portfolio">
-            <!-- projet 1 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-1.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://adsocial.ma/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">adsocial.ma <span class="skills">CMS</span> <span class="skills">wordpress</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <!-- projet 2 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-2.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://ismailkraou.github.io/kliner-V2/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">kliner <span class="skills">html</span> <span class="skills">css</span><span class="skills">js</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <!-- projet 3 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-3.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://digikma.000webhostapp.com/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">digikma <span class="skills">CMS</span> <span class="skills">wordpress</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <!-- projet 4 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-4.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://ismailkraou1.wordpress.com/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">wordpress website <span class="skills">CMS</span> <span class="skills">wordpress</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <!-- projet 5 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-5.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://ismailkraou.github.io/flux/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">flux <span class="skills">js</span> <span class="skills">html</span> <span class="skills">css</span> <span class="skills">tailwind.</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <!-- projet 6 -->
-            <div class="projects-portfolio-project">
-              <img class="projects-portfolio-project-thumbnail" loading="lazy" alt="" src="./public/projects/project-6.png"/>
-              <div class="projects-portfolio-project-disc">
-                <div class="projects-portfolio-project-disc-title">
-                  <h2 class="projects-portfolio-project-disc-title-title2">
-                    <a href="https://ismailkraou.github.io/resumtemplate/" target="_blank" rel="noopener noreferrer">
-                      <p class="projects-portfolio-project-disc-title-title2-first">CLICK HERE TO VISIT : </p>
-                      <p class="projects-portfolio-project-disc-title-title2-last">resume template <span class="skills">html</span> <span class="skills">css</span> <span class="skills">js</span></p>
-                    </a>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        
-        </div>
-      </section>
-
-
-      <section id="experiences" class="section experiences">
-        <div class="container">
-
-          <!-- title -->
-          <div class="experiences-title">
-            <h2 class="experiences-title-title2">
-              <p class="experiences-title-title2-first">Experience</p>
-              <p class="experiences-title-title2-last">WORK</p>
-            </h2>
-          </div>
-
-          <!-- experience 1 -->
-          <div class="experiences-experience">
-
-            <!-- title -->
-            <div class="experiences-experience-subtitle">
-              <h3 class="experiences-experience-subtitle-title3">
-                <span>
-                  <img class="experiences-experience-subtitle-title3-icon" loading="lazy" alt="experience as a Front-end Web Developer" src="./public/experiences/freelance.png"/>
-                  <p class="experiences-experience-subtitle-title3-first">Front-end Web Developer <small class="small"> - freelance</small></p>
-                </span>
-                <p class="experiences-experience-subtitle-title3-last">Oct 2017 - Present</p>
-
-              </h3>
-            </div>
-
-            <!-- discription -->
-            <div class="experiences-experience-discr">
-              <p class="experiences-experience-discr-p">
-                Develop and design various front-end websites for clients with a focus on UI/UX design, including landing pages, portfolios, static websites, professional sites, personal blogs, small business websites, e-commerce sites, custom web applications, and site maintenance. <br> Prioritize tasks and manage work efficiently to meet expectations and deadlines.
-              </p>
-            </div>
-
-          </div>
-
-          <!-- experience 2 -->
-          <div class="experiences-experience">
-
-            <!-- title -->
-            <div class="experiences-experience-subtitle">
-              <h3 class="experiences-experience-subtitle-title3">
-                <span>
-                  <img class="experiences-experience-subtitle-title3-icon" loading="lazy" alt="experience at Ignite Media" src="./public/experiences/Ignite Media.jpg"/>
-                  <p class="experiences-experience-subtitle-title3-first">Web Developer <small class="small"> -  Remote at: Ignite Media</small></p>
-                </span>
-                <p class="experiences-experience-subtitle-title3-last">Aug 2023 - Oct 2023</p>
-
-              </h3>
-            </div>
-
-            <!-- discription -->
-            <div class="experiences-experience-discr">
-              <p class="experiences-experience-discr-p">
-                Create and develop websites using WordPress, Elementor, based on PSD design.
-              </p>
-            </div>
-
-          </div>
-
-
-          <!-- experience 3 -->
-          <div class="experiences-experience">
-
-            <!-- title -->
-            <div class="experiences-experience-subtitle">
-              <h3 class="experiences-experience-subtitle-title3">
-                <span>
-                  <img class="experiences-experience-subtitle-title3-icon" loading="lazy" alt="experience at Maroc SEO" src="./public/experiences/googlelogo.svg"/>
-                  <p class="experiences-experience-subtitle-title3-first">Web Developer  <small class="small"> - Internship at: Maroc SEO</small></p>
-                </span>
-                <p class="experiences-experience-subtitle-title3-last">Sep 2016 - Nov 2016</p>
-
-              </h3>
-            </div>
-
-            <!-- discription -->
-            <div class="experiences-experience-discr">
-              <p class="experiences-experience-discr-p">
-                Participated in the analysis and distribution of tasks. <br>
-                Created and developed a website using WordPress. <br>
-                Developed an application using & MySQL. <br>
-                Designed technical web interfaces and managed user information databases. <br>
-                Integrated work under WordPress, fixed errors in lines of code, and monitored the proper functioning and quality of website navigation.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-      
-    </main>
-
-    <!-- footer -->
-    <footer class="footer" id="contact">
-
-      <div class="container">
-
-        <!-- title -->
-        <div class="footer-title">
-          <h2 class="footer-title-title2">
-            <p class="footer-title-title2-first">Contact</p>
-            <p class="footer-title-title2-last">HIRE ME</p>
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">
+            Capabilities
           </h2>
-        </div>
 
-        <!-- discription -->
-        <div class="footer-discr">
-          <p class="footer-discr-p">
-            Interested in working together or have any questions? Feel free to drop me an email at my email adress or connect with me on LinkedIn. Let's chat and bring your ideas to life!
+          <p class="section-desc">
+            My passion and goal is to help you create exceptional digital
+            experiences.
           </p>
         </div>
+      </div>
+      <!-- end heading-block -->
 
-      
-
-      <!-- contacts links -->
-        <div class="footer-contact">
-            <div class="footer-contact-links">
-
-              <span class="footer-contact-links-addr">
-                <img class="footer-contact-link-addr-icon" loading="lazy" alt="contact me in my email" src="./public/mail_icon.svg"/>
-                <p class="footer-contact-link-addr-disc">ismail.kraou@gmail.com</p>
-              </span>
-
-              <div class="footer-contact-links-container">
-                <a href="mailto:ismail.kraou@gmail.com" class="footer-contact-links-container-addr">
-                  <img class="footer-contact-links-container-icon" loading="lazy" alt="contact me in my gmail" src="./public/gmail_google_icon.svg"/>
-                </a>
-                <a href="https://www.linkedin.com/in/ismailkraou/" class="footer-contact-links-container-addr">
-                  <img class="footer-contact-links-container-icon" loading="lazy" alt="contact me in my linkedin" src="./public/linkedin logo_icon.svg"/>
-                </a>
-              </div>
-            </div>
+      <div
+        class="row skills-list block-large-1-3 block-medium-1-2 block-tab-full"
+      >
+        <!-- Skill 1 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">HTML5</h4>
+            <p>
+              Expert in crafting semantic, accessible, and well-structured HTML
+              for modern, performance-optimized websites.
+            </p>
+          </div>
         </div>
 
+        <!-- Skill 2 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">CSS3 & SCSS</h4>
+            <p>
+              Proficient in designing responsive, visually appealing interfaces
+              using CSS3 and the SCSS preprocessor for maintainable code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">JavaScript & React.js</h4>
+            <p>
+              Skilled in creating interactive and dynamic user experiences using
+              JavaScript ES6+ and frameworks like React.js.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">UI/UX Design</h4>
+            <p>
+              Focused on delivering intuitive user experiences and visually
+              engaging interfaces tailored to users' needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">WordPress & PHP</h4>
+            <p>
+              Experienced in building custom WordPress themes and plugins,
+              backed by strong PHP development skills.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="column item-skill" data-aos="fade-up">
+          <div class="item-skill__content">
+            <h4 class="item-title">MySQL</h4>
+            <p>
+              Adept at designing and managing scalable databases using MySQL,
+              with a focus on performance and security.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end skills-list -->
+    </section>
+
+    <!-- end s-services -->
+
+    <!-- CTA -->
+    <!-- ================================================== -->
+    <section class="s-cta ss-dark">
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-desc">Let’s Bring Your Vision to Life</h2>
+        </div>
+      </div>
+      <!-- end heading-block -->
+
+      <div class="row cta-content" data-aos="fade-up">
+        <div class="column large-full">
+          <p>
+            Ready to build something amazing? I specialize in creating stunning,
+            user-friendly websites that bring your ideas to reality. Whether
+            it's a personal project or a business venture, I can help you stand
+            out.
+          </p>
+
+          <a href="#contact" class="btn full-width">Get In Touch</a>
+        </div>
+      </div>
+      <!-- end cta-content -->
+    </section>
+    <!-- end s-cta -->
+
+    <!-- works -->
+    <!-- ================================================== -->
+    <section id="works" class="s-works target-section">
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">
+            Selected Works
+          </h2>
+          <p class="section-desc">
+            Here are some of my selected works I have done lately. Feel free to
+            check them out.
+          </p>
+        </div>
+      </div>
+      <!-- end heading-block -->
+
+      <div class="masonry-wrap">
+        <div class="masonry">
+          <div class="grid-sizer"></div>
+
+          <!-- Project 1 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-1.png"
+                  class="thumb-link"
+                  title="adsocial.ma"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-1.png"
+                    alt="Adsocial Project Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://adsocial.ma/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Adsocial</h4>
+                <p class="item-folio__cat">WordPress</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A WordPress-based platform delivering cutting-edge advertising
+                  solutions for diverse businesses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- Project 2 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-2.png"
+                  class="thumb-link"
+                  title="Kliner"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-2.png"
+                    alt="Kliner Project Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://ismailkraou.github.io/kliner-V2/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Kliner</h4>
+                <p class="item-folio__cat">HTML, CSS, JS</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A sleek and dynamic landing page showcasing modern cleaning
+                  services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- Project 3 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-3.png"
+                  class="thumb-link"
+                  title="Digikma"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-3.png"
+                    alt="Digikma Project Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://digikma.000webhostapp.com/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Digikma</h4>
+                <p class="item-folio__cat">CMS, WordPress</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A CMS-driven website offering digital marketing solutions and
+                  services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- Project 4 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-4.png"
+                  class="thumb-link"
+                  title="WordPress Website"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-4.png"
+                    alt="WordPress Website Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://ismailkraou1.wordpress.com/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">WordPress Website</h4>
+                <p class="item-folio__cat">CMS, WordPress</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A professional WordPress website tailored for online presence
+                  and branding.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- Project 5 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-5.png"
+                  class="thumb-link"
+                  title="Flux"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-5.png"
+                    alt="Flux Project Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://ismailkraou.github.io/flux/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Flux</h4>
+                <p class="item-folio__cat">HTML, CSS, JS, Tailwind</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A responsive website designed using modern TailwindCSS and JS
+                  for rapid prototyping.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+
+          <!-- Project 6 -->
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="./public/projects/project-6.png"
+                  class="thumb-link"
+                  title="Resume Template"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="./public/projects/project-6.png"
+                    alt="Resume Template Thumbnail"
+                  />
+                </a>
+                <a
+                  href="https://ismailkraou.github.io/resumtemplate/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Resume Template</h4>
+                <p class="item-folio__cat">HTML, CSS, JS</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  A modern resume template built with clean HTML, CSS, and
+                  JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end masonry__brick -->
+        </div>
+        <!-- end masonry -->
+      </div>
+      <!-- end masonry-wrap -->
+    </section>
+    <!-- end s-work -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+      <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading">Get In Touch</h2>
+        </div>
       </div>
 
-      <div class="copy">
-        <p>made with love by <strong>ISMAIL K.</strong> &copy; 2023</p>
+      <div class="row contact-main" data-aos="fade-up">
+        <div class="column large-full">
+          <p class="contact-email">
+            <a href="mailto:ismail.kraou@gmail.com">ismail.k.</a>
+          </p>
+
+          <p class="section-desc">
+            I'm happy to connect, listen, and help. Let's work together and
+            build something awesome. Let’s turn your idea into an even greater
+            product.
+            <a href="mailto:ismail.kraou@gmail.com">Email Me</a>.
+          </p>
+        </div>
       </div>
 
+      <div
+        class="row contact-infos"
+        data-aos="fade-up"
+        data-aos-anchor=".contact-main"
+      >
+        <div class="column large-7 medium-full contact-social">
+          <h4>Social</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ismailkraou/"
+                title="LinkedIn"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end contact-infos -->
+    </section>
+    <!-- end s-contact -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+      <div class="row">
+        <div class="column large-full ss-copyright">
+          <span>© Copyright Ismail K. 2023</span>
+          <span>
+            Designed by
+            <a href="https://www.linkedin.com/in/ismailkraou/">Ismail K.</a>
+          </span>
+        </div>
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+      </div>
     </footer>
 
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end photoSwipe background -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
