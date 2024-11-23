@@ -5022,7 +5022,7 @@ input::-moz-focus-inner {
 }
 
 .intro-grid {
-  background-image: url(../images/pattern-dot-grid.svg);
+  background-image: url(public/pattern-dot-grid.svg);
   background-size: 24px 24px;
   opacity: .15;
   position: absolute;
