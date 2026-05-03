@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Case Study | Ismail K.</title>
+    <meta name="description" content="A responsive website designed using modern TailwindCSS and JS.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .case-study-hero { margin: 150px auto 50px; max-width: 1000px; text-align: center; }
+        .case-study-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--clr-text); }
+        .case-study-hero .tagline { font-size: 1.2rem; color: rgba(255,255,255,0.7); }
+        .case-study-content { max-width: 800px; margin: 0 auto 100px; padding: 0 2rem; }
+        .case-study-content h2 { color: #FF0000; margin: 3rem 0 1rem; font-size: 2rem; }
+        .case-study-content p { font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8; color: rgba(255,255,255,0.85); }
+        
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+        .summary-item { padding: 2rem; background: var(--clr-glass-bg); border: 1px solid var(--clr-glass-border); border-radius: 15px; }
+        .summary-item h3 { color: #FF0000; font-size: 1.1rem; margin-bottom: 1rem; }
+        
+        .back-link { display: inline-block; margin-top: 2rem; color: var(--clr-text); text-decoration: none; border-bottom: 1px solid #FF0000; padding-bottom: 5px; transition: color 0.3s; }
+        .back-link:hover { color: #FF0000; border-color: #FF0000; }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">IK<span>.</span></a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="close-icon" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <header class="case-study-hero reveal">
+        <h1>Flux Cinematique</h1>
+        <p class="tagline">Premium cinematic and architectural photography showcase with high-end visuals.</p>
+        <a href="index.html#work" class="back-link">&larr; Back to Portfolio</a>
+    </header>
+
+    <!-- Project Showcase Placeholder -->
+    <section class="project-showcase reveal" style="max-width: 1000px; margin: 0 auto 50px; padding: 0 2rem;">
+        <img src="images/flux.png" alt="Flux Cinematique website screenshot" style="width:100%; border-radius:16px; box-shadow: 0 25px 60px rgba(0,0,0,0.5); border: 1px solid var(--clr-glass-border);">
+    </section>
+
+    <main class="case-study-content">
+        <div class="summary-grid reveal">
+            <div class="summary-item">
+                <h3>The Hook</h3>
+                <p style="margin: 0; font-size: 1rem;">A high-end visual portfolio designed to showcase cinematic photography and architectural precision with zero distractions.</p>
+            </div>
+            <div class="summary-item">
+                <h3>Role & Timeline</h3>
+                <p style="margin: 0; font-size: 1rem;"><strong>Role:</strong> Creative Developer<br><strong>Timeframe:</strong> 1 Week</p>
+            </div>
+            <div class="summary-item">
+                <h3>The Stack</h3>
+                <div class="skill-tags" style="margin: 0;">
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">HTML5</span>
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">CSS3</span>
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="reveal">
+            <h2>The Challenge</h2>
+            <p>The goal was to create a digital space that feels like a premium art gallery. The interface needed to be invisible, allowing the high-resolution cinematic imagery to be the primary focus while maintaining high performance and smooth navigation.</p>
+        </div>
+        <div class="reveal">
+            <h2>The Solution</h2>
+            <p>I built a minimalist, edge-to-edge experience using custom CSS and vanilla JavaScript. By implementing lazy loading and optimized image serving, I ensured that the heavy visual content loads seamlessly without impacting the user experience.</p>
+        </div>
+        <div class="reveal">
+            <h2>Measured Results</h2>
+            <p>The portfolio successfully captures the brand's aesthetic and provides a high-end showcase for their work, resulting in a professional hub that attracts high-value architectural and cinematic clients.</p>
+        </div>
+        <div style="text-align: center; margin-top: 4rem; display: flex; flex-direction: column; align-items: center; gap: 2rem;" class="reveal">
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://ismailkraou.github.io/flux/" target="_blank" class="btn magnetic-btn">Visit Live Site</a>
+                <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn" style="background: var(--clr-glass-bg); border: 1px solid #FF0000;">Contact Me</a>
+            </div>
+            <a href="index.html#work" class="back-link">&larr; Back to Portfolio</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">IK<span>.</span></a>
+                <p>Frontend Developer based in Morocco.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/ismailkraou" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ismailkraou/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://comeup.com/fr/@ismailk" target="_blank" rel="noopener noreferrer">ComeUp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ismail K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

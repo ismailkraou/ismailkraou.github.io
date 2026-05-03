@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevSite Case Study | Ismail K.</title>
+    <meta name="description" content="A high-end agency portfolio showcasing custom WordPress themes and digital solutions.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .case-study-hero { margin: 150px auto 50px; max-width: 1000px; text-align: center; }
+        .case-study-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--clr-text); }
+        .case-study-hero .tagline { font-size: 1.2rem; color: rgba(255,255,255,0.7); }
+        .case-study-content { max-width: 800px; margin: 0 auto 100px; padding: 0 2rem; }
+        .case-study-content h2 { color: #673AB7; margin: 3rem 0 1rem; font-size: 2rem; }
+        .case-study-content p { font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8; color: rgba(255,255,255,0.85); }
+        
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+        .summary-item { padding: 2rem; background: var(--clr-glass-bg); border: 1px solid var(--clr-glass-border); border-radius: 15px; }
+        .summary-item h3 { color: #673AB7; font-size: 1.1rem; margin-bottom: 1rem; }
+        
+        .back-link { display: inline-block; margin-top: 2rem; color: var(--clr-text); text-decoration: none; border-bottom: 1px solid #673AB7; padding-bottom: 5px; transition: color 0.3s; }
+        .back-link:hover { color: #673AB7; border-color: #673AB7; }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">IK<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="case-study-hero reveal">
+        <h1>WebDevSite</h1>
+        <p class="tagline">Agency portfolio showcasing premium web development and design services.</p>
+        <a href="index.html#work" class="back-link">&larr; Back to Portfolio</a>
+    </header>
+
+    <!-- Project Showcase Placeholder -->
+    <section class="project-showcase reveal" style="max-width: 1000px; margin: 0 auto 50px; padding: 0 2rem;">
+        <img src="images/webdevsite.png" alt="WebDevSite website screenshot" style="width:100%; border-radius:16px; box-shadow: 0 25px 60px rgba(0,0,0,0.5); border: 1px solid var(--clr-glass-border);">
+    </section>
+
+    <main class="case-study-content">
+        <div class="summary-grid reveal">
+            <div class="summary-item">
+                <h3>The Hook</h3>
+                <p style="margin: 0; font-size: 1rem;">A custom-built agency portfolio designed to showcase technical excellence in WordPress engineering and digital design.</p>
+            </div>
+            <div class="summary-item">
+                <h3>Role & Timeline</h3>
+                <p style="margin: 0; font-size: 1rem;"><strong>Role:</strong> Lead Developer & Designer<br><strong>Timeframe:</strong> Ongoing</p>
+            </div>
+            <div class="summary-item">
+                <h3>The Stack</h3>
+                <div class="skill-tags" style="margin: 0;">
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">WordPress</span>
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">Custom PHP</span>
+                    <span class="tag" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+        <div class="reveal">
+            <h2>The Business Challenge</h2>
+            <p>WebDevSite serves as both a client portfolio and a testing ground for high-performance WordPress themes. The challenge was to create a site that looks premium while maintaining a near-perfect performance score across all devices.</p>
+        </div>
+        <div class="reveal">
+            <h2>The Strategic Solution</h2>
+            <p>I built a completely custom WordPress theme from scratch, avoiding heavy page builders and external libraries. I implemented a modular template system that allows for rapid deployment of new features and case studies without code bloat.</p>
+        </div>
+        <div class="reveal">
+            <h2>Measured Results</h2>
+            <p>The platform maintains a high performance standard and has successfully served as a lead generation tool for high-value clients who prioritize technical performance and modern design.</p>
+        </div>
+        <div style="text-align: center; margin-top: 4rem; display: flex; flex-direction: column; align-items: center; gap: 2rem;" class="reveal">
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://webdevsite.fr/" target="_blank" class="btn magnetic-btn">Visit Live Site</a>
+                <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn" style="background: var(--clr-glass-bg); border: 1px solid #673AB7;">Contact Me</a>
+            </div>
+            <a href="index.html#work" class="back-link">&larr; Back to Portfolio</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">IK<span>.</span></a>
+                <p>Frontend Developer based in Morocco.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

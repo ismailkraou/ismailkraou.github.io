@@ -1,665 +1,330 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head>
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Ismail K. - Junior Web Developer | Welcome to my digital playground! Explore my portfolio and let's create magic together."
-    />
-    <meta
-      name="keywords"
-      content="Ismail K., web developer, junior web developer, web development, portfolio, html, css, js, javascript, responsive, WordPress, php, mysql, freelance, remote, a distance, work, home, web, imouzzer kandar, casablanca, fes, marakech, morocco, france, fr, en, arabe, eng, google, software"
-    />
-    <meta name="author" content="Ismail K." />
-    <title>Ismail K. - Web Developer</title>
+<html lang="en">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Kraou | Senior Front-End Developer</title>
+    <meta name="description"
+        content="Senior Front-End Developer portfolio crafting digital experiences with Moroccan precision.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="styles.css" />
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
 
-    <!-- script
-    ================================================== -->
-    <script src="modernizr.js"></script>
-    <script src="pace.min.js"></script>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">IK<span>.</span></a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" class="close-icon" style="display: none;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  </head>
+    <!-- Hero Section -->
+    <header class="hero bento-grid">
+        <!-- Background Pattern -->
+        <div class="bg-pattern"></div>
 
-  <body id="top">
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
+        <div class="bento-item headline row-span-2 col-span-2 reveal">
+            <h1>Engineering High-Performance Interfaces with <span class="accent-gold">Precision</span>.</h1>
+            <p>Frontend Developer and Web Developer based in Morocco. My passion and goal is to help you create
+                exceptional digital experiences.</p>
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn">Let's Talk</a>
+        </div>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
-      <div class="header-logo">
-        <a class="site-logo" href="index.html">
-          <img src="public/logo@2x.png" alt="Homepage" />
-        </a>
-      </div>
+        <div class="bento-item skills reveal">
+            <h3>Core Tech Stack</h3>
+            <div class="skill-tags">
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">JavaScript (ES6+)</span>
+                <span class="tag">React.js</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">WordPress/PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Figma</span>
+            </div>
+        </div>
 
-      <nav class="header-nav-wrap">
-        <ul class="header-main-nav">
-          <li class="current">
-            <a class="smoothscroll" href="#intro" title="intro">Intro</a>
-          </li>
-          <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-          <li>
-            <a class="smoothscroll" href="#services" title="skills">Skills</a>
-          </li>
-          <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-          <li>
-            <a class="smoothscroll" href="#contact" title="contact us"
-              >Say Hello</a
-            >
-          </li>
-        </ul>
+        <div class="bento-item experience reveal">
+            <h3>Experience</h3>
+            <p><strong>Frontend Developer at Prilow</strong> (Casablanca)<br>8+ years of dedicated web development
+                across agency and freelance environments.</p>
+        </div>
 
-        <ul class="header-social">
-          <li>
-            <a href="https://dribbble.com/ismailkraou" target="_blank"
-              ><i class="fab fa-dribbble" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/ismailkraou" target="_blank"
-              ><i class="fab fa-github" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-
-      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
     </header>
-    <!-- end s-header -->
 
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-      <div class="row intro-content">
-        <div class="column large-9 mob-full intro-text">
-          <h3>Hello, I'm Ismail K.</h3>
-          <h1>
-            Frontend Developer <br />
-            and Web Developer <br />
-            Based In Morocco.
-          </h1>
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <h2 class="section-title reveal">Selected Work</h2>
+        <div class="project-grid">
+            <article class="project-card glass-card reveal">
+                <a href="project-adsocial.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/adsocial.png" alt="AdSocial website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>AdSocial</h3>
+                        <p>A digital marketing agency platform specializing in social media and online advertising
+                            growth strategies.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-kliner.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/kliner.png" alt="Kliner For Business website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Kliner For Business</h3>
+                        <p>A professional cleaning service platform connecting businesses with trusted partners through
+                            a high-performance UI.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-digikma.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/digikma.png" alt="Digikma website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Digikma</h3>
+                        <p>A CMS-driven digital marketing platform designed for scalable content strategy and engagement
+                            (Archived).</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-flux.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/flux.png" alt="Flux Cinematique website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Flux Cinematique</h3>
+                        <p>A premium cinematic and architectural photography showcase designed with high-end visual
+                            precision.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-mybodylymph.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/mybodylymph.png" alt="My Body Lymph website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>My Body Lymph</h3>
+                        <p>A sophisticated wellness platform specializing in the Renata França method and luxury body
+                            treatments.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-lyonmma.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/lyonmma.png" alt="Lyon MMA Center website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Lyon MMA Center</h3>
+                        <p>A bold, high-energy platform for a premier martial arts academy, optimized for student
+                            recruitment.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-alcasserauto.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/alcasserauto.png" alt="Alcasser Auto website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Alcasser Auto</h3>
+                        <p>A dynamic automotive dealership platform featuring a robust catalog of high-quality used
+                            vehicles.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-yaz.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/yaz.png" alt="Yaz Car website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Yaz Car</h3>
+                        <p>An e-commerce and catalog site for specialized automotive services and high-quality vehicle
+                            sales.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-infosystem.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/infosystem.png" alt="I-Info System website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>I-Info System</h3>
+                        <p>A robust e-commerce storefront for IT hardware, professional office equipment, and computer
+                            solutions.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-webdevsite.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/webdevsite.png" alt="WebDevSite website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>WebDevSite</h3>
+                        <p>A high-end digital agency portfolio showcasing excellence in WordPress engineering and
+                            design.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card glass-card reveal">
+                <a href="project-hikayat.html" style="text-decoration: none; color: inherit; display: block;">
+                    <img src="images/hikayat.png" alt="Hikayat Al Insan website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <div class="project-info">
+                        <h3>Hikayat Al Insan</h3>
+                        <p>An immersive cultural platform sharing human narratives through minimalist and artistic
+                            storytelling.</p>
+                        <span class="accent-gold"
+                            style="font-size: 0.9rem; font-weight: bold; margin-top: 1rem; display: inline-block;">Read
+                            Full Case Study &rarr;</span>
+                    </div>
+                </a>
+            </article>
         </div>
-
-        <div class="intro-scroll">
-          <a href="#about" class="intro-scroll-link smoothscroll">
-            Scroll For More
-          </a>
-        </div>
-
-        <div class="intro-grid"></div>
-        <div class="intro-pic"></div>
-      </div>
-      <!-- end row -->
-    </section>
-    <!-- end intro -->
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-      <div class="about-me">
-        <div class="row heading-block" data-aos="fade-up">
-          <div class="column large-full">
-            <h2 class="section-heading">About Me</h2>
-          </div>
-        </div>
-
-        <div class="row about-me__content" data-aos="fade-up">
-          <div class="column large-full about-me__text">
-            <p class="lead">
-              I'm <strong>Ismail K.</strong>, a
-              <strong>web developer from Morocco</strong>. I'm all about tech –
-              from the latest trends to the coolest web development techniques,
-              I'm constantly diving in to learn something new.
-            </p>
-
-            <p>
-              With more than 5 years of experience crafting dynamic websites and
-              web apps, I'm handy with HTML5, CSS3, JavaScript, React.js, and
-              I'm venturing into PHP too. I've got a soft spot for WordPress and
-              can handle SQL and MySQL databases like a pro.
-            </p>
-
-            <p>
-              But it's not just about the code for me; I'm all about creating
-              experiences people love to use, paying close attention to every
-              detail. When I'm not coding, I'm probably out enjoying nature or
-              spending time with loved ones.
-            </p>
-
-            <p>
-              Welcome to my digital playground! Feel free to explore, and let's
-              chat if you're up to something cool – maybe we can make magic
-              together!
-            </p>
-          </div>
-        </div>
-
-        <div class="row about-me__buttons">
-          <div class="column large-half tab-full" data-aos="fade-up">
-            <a
-              href="https://www.linkedin.com/in/ismailkraou/"
-              class="btn btn--stroke full-width"
-              >Hire Me</a
-            >
-          </div>
-          <div class="column large-half tab-full" data-aos="fade-up">
-            <a
-              href="mailto:ismail.kraou@gmail.com"
-              class="btn btn--primary full-width"
-              >email me</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- end about-me -->
-    </section>
-    <!-- end s-about -->
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
-      <div class="shadow-overlay"></div>
-
-      <div class="row heading-block heading-block--center" data-aos="fade-up">
-        <div class="column large-full">
-          <h2 class="section-heading section-heading--centerbottom">
-            Capabilities
-          </h2>
-
-          <p class="section-desc">
-            My passion and goal is to help you create exceptional digital
-            experiences.
-          </p>
-        </div>
-      </div>
-      <!-- end heading-block -->
-
-      <div
-        class="row skills-list block-large-1-3 block-medium-1-2 block-tab-full"
-      >
-        <!-- Skill 1 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">HTML5</h4>
-            <p>
-              Expert in crafting semantic, accessible, and well-structured HTML
-              for modern, performance-optimized websites.
-            </p>
-          </div>
-        </div>
-
-        <!-- Skill 2 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">CSS3 & SCSS</h4>
-            <p>
-              Proficient in designing responsive, visually appealing interfaces
-              using CSS3 and the SCSS preprocessor for maintainable code.
-            </p>
-          </div>
-        </div>
-
-        <!-- Skill 3 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">JavaScript & React.js</h4>
-            <p>
-              Skilled in creating interactive and dynamic user experiences using
-              JavaScript ES6+ and frameworks like React.js.
-            </p>
-          </div>
-        </div>
-
-        <!-- Skill 4 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">UI/UX Design</h4>
-            <p>
-              Focused on delivering intuitive user experiences and visually
-              engaging interfaces tailored to users' needs.
-            </p>
-          </div>
-        </div>
-
-        <!-- Skill 5 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">WordPress & PHP</h4>
-            <p>
-              Experienced in building custom WordPress themes and plugins,
-              backed by strong PHP development skills.
-            </p>
-          </div>
-        </div>
-
-        <!-- Skill 6 -->
-        <div class="column item-skill" data-aos="fade-up">
-          <div class="item-skill__content">
-            <h4 class="item-title">MySQL</h4>
-            <p>
-              Adept at designing and managing scalable databases using MySQL,
-              with a focus on performance and security.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end skills-list -->
     </section>
 
-    <!-- end s-services -->
-
-    <!-- CTA -->
-    <!-- ================================================== -->
-    <section class="s-cta ss-dark">
-      <div class="row heading-block heading-block--center" data-aos="fade-up">
-        <div class="column large-full">
-          <h2 class="section-desc">Let’s Bring Your Vision to Life</h2>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="glass-card about-card reveal">
+            <div class="about-flex-container" style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap;">
+                <div class="about-avatar-wrapper" style="flex: 0 0 200px; text-align: center;">
+                    <svg class="abstract-avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                        style="width: 100%; height: auto; margin-bottom: 1.5rem;">
+                        <defs>
+                            <linearGradient id="avatarGradAbout" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--clr-accent-emerald)" />
+                                <stop offset="100%" stop-color="var(--clr-accent-gold)" />
+                            </linearGradient>
+                            <mask id="avatarMaskAbout">
+                                <circle cx="100" cy="100" r="90" fill="white" />
+                            </mask>
+                        </defs>
+                        <circle cx="100" cy="100" r="90" fill="rgba(255,255,255,0.03)" stroke="var(--clr-glass-border)"
+                            stroke-width="2" />
+                        <g mask="url(#avatarMaskAbout)">
+                            <circle cx="100" cy="70" r="30" fill="url(#avatarGradAbout)" />
+                            <path d="M40,170 Q40,120 100,120 Q160,120 160,170 L160,200 L40,200 Z"
+                                fill="url(#avatarGradAbout)" opacity="0.8" />
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="var(--clr-accent-gold)"
+                                stroke-width="1" stroke-dasharray="10 5" opacity="0.3" />
+                        </g>
+                    </svg>
+                    <div class="avatar-actions" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <a href="https://www.linkedin.com/in/ismailkraou" target="_blank" rel="noopener noreferrer"
+                            class="btn accent-btn"
+                            style="padding: 0.6rem 1rem; font-size: 0.85rem; width: 100%;">LinkedIn Profile</a>
+                        <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn"
+                            style="padding: 0.6rem 1rem; font-size: 0.85rem; width: 100%;">Contact Me</a>
+                    </div>
+                </div>
+                <div class="about-content" style="flex: 1; min-width: 300px;">
+                    <p>I am a passionate and experienced Web Developer with nearly a decade of expertise in creating
+                        dynamic, user-centric websites and web applications. My journey began in 2016, and since then, I
+                        have evolved from core HTML/CSS to mastering the modern JavaScript ecosystem, including React.js
+                        and Next.js.</p>
+                    <p>Currently serving as a **Frontend Developer at Prilow**, I combine the structural discipline of a
+                        seasoned developer with the aesthetic eye of a UI designer. I specialize in transforming complex
+                        business requirements into seamless, high-converting digital products that deliver measurable
+                        results.</p>
+                    <p>Fluent in **English, Arabic, and French**, I am highly compatible with global remote work and
+                        dedicated to helping businesses establish a powerful, fast-loading digital presence.</p>
+                </div>
+            </div>
+            <div class="about-stats bento-grid" style="grid-auto-rows: auto; margin-top: 2rem;">
+                <div class="bento-item stat-item">
+                    <h3 class="accent-gold">9+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="bento-item stat-item">
+                    <h3 class="accent-gold">40+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="bento-item stat-item">
+                    <h3 class="accent-gold">Multilingual</h3>
+                    <p>AR / FR / EN</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- end heading-block -->
-
-      <div class="row cta-content" data-aos="fade-up">
-        <div class="column large-full">
-          <p>
-            Ready to build something amazing? I specialize in creating stunning,
-            user-friendly websites that bring your ideas to reality. Whether
-            it's a personal project or a business venture, I can help you stand
-            out.
-          </p>
-
-          <a href="#contact" class="btn full-width">Get In Touch</a>
-        </div>
-      </div>
-      <!-- end cta-content -->
     </section>
-    <!-- end s-cta -->
 
-    <!-- works -->
-    <!-- ================================================== -->
-    <section id="works" class="s-works target-section">
-      <div class="row heading-block heading-block--center" data-aos="fade-up">
-        <div class="column large-full">
-          <h2 class="section-heading section-heading--centerbottom">
-            Selected Works
-          </h2>
-          <p class="section-desc">
-            Here are some of my selected works I have done lately. Feel free to
-            check them out.
-          </p>
+    <!-- Contact Section CTA -->
+    <section class="contact-section">
+        <div class="glass-card contact-card reveal">
+            <h2>Let's build something extraordinary.</h2>
+            <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.7); max-width: 600px; margin-inline: auto;">
+                Ready to build something amazing? Whether it's a personal project or a business venture, I can help you
+                stand out.
+            </p>
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn">Get In Touch</a>
         </div>
-      </div>
-      <!-- end heading-block -->
-
-      <div class="masonry-wrap">
-        <div class="masonry">
-          <div class="grid-sizer"></div>
-
-          <!-- Project 1 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-1.png"
-                  class="thumb-link"
-                  title="adsocial.ma"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-1.png"
-                    alt="Adsocial Project Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://adsocial.ma/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">Adsocial</h4>
-                <p class="item-folio__cat">WordPress</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A WordPress-based platform delivering cutting-edge advertising
-                  solutions for diverse businesses.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-
-          <!-- Project 2 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-2.png"
-                  class="thumb-link"
-                  title="Kliner"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-2.png"
-                    alt="Kliner Project Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://ismailkraou.github.io/kliner-V2/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">Kliner</h4>
-                <p class="item-folio__cat">HTML, CSS, JS</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A sleek and dynamic landing page showcasing modern cleaning
-                  services.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-
-          <!-- Project 3 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-3.png"
-                  class="thumb-link"
-                  title="Digikma"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-3.png"
-                    alt="Digikma Project Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://digikma.000webhostapp.com/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">Digikma</h4>
-                <p class="item-folio__cat">CMS, WordPress</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A CMS-driven website offering digital marketing solutions and
-                  services.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-
-          <!-- Project 4 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-4.png"
-                  class="thumb-link"
-                  title="WordPress Website"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-4.png"
-                    alt="WordPress Website Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://ismailkraou1.wordpress.com/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">WordPress Website</h4>
-                <p class="item-folio__cat">CMS, WordPress</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A professional WordPress website tailored for online presence
-                  and branding.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-
-          <!-- Project 5 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-5.png"
-                  class="thumb-link"
-                  title="Flux"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-5.png"
-                    alt="Flux Project Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://ismailkraou.github.io/flux/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">Flux</h4>
-                <p class="item-folio__cat">HTML, CSS, JS, Tailwind</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A responsive website designed using modern TailwindCSS and JS
-                  for rapid prototyping.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-
-          <!-- Project 6 -->
-          <div class="masonry__brick" data-aos="fade-up">
-            <div class="item-folio">
-              <div class="item-folio__thumb">
-                <a
-                  href="./public/projects/project-6.png"
-                  class="thumb-link"
-                  title="Resume Template"
-                  data-size="1050x700"
-                >
-                  <img
-                    src="./public/projects/project-6.png"
-                    alt="Resume Template Thumbnail"
-                  />
-                </a>
-                <a
-                  href="https://ismailkraou.github.io/resumtemplate/"
-                  class="item-folio__project-link"
-                  title="Project link"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="item-folio__text">
-                <h4 class="item-folio__title">Resume Template</h4>
-                <p class="item-folio__cat">HTML, CSS, JS</p>
-              </div>
-              <div class="item-folio__caption">
-                <p>
-                  A modern resume template built with clean HTML, CSS, and
-                  JavaScript.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- end masonry__brick -->
-        </div>
-        <!-- end masonry -->
-      </div>
-      <!-- end masonry-wrap -->
     </section>
-    <!-- end s-work -->
 
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-      <div class="row heading-block" data-aos="fade-up">
-        <div class="column large-full">
-          <h2 class="section-heading">Get In Touch</h2>
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#" class="logo">IK<span>.</span></a>
+                <p>Frontend Developer based in Morocco.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/ismailkraou" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ismailkraou/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://comeup.com/fr/@ismailk" target="_blank" rel="noopener noreferrer">ComeUp</a>
+            </div>
         </div>
-      </div>
-
-      <div class="row contact-main" data-aos="fade-up">
-        <div class="column large-full">
-          <p class="contact-email">
-            <a href="mailto:ismail.kraou@gmail.com">ismail.k.</a>
-          </p>
-
-          <p class="section-desc">
-            I'm happy to connect, listen, and help. Let's work together and
-            build something awesome. Let’s turn your idea into an even greater
-            product.
-            <a href="mailto:ismail.kraou@gmail.com">Email Me</a>.
-          </p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ismail K. All rights reserved.</p>
         </div>
-      </div>
-
-      <div
-        class="row contact-infos"
-        data-aos="fade-up"
-        data-aos-anchor=".contact-main"
-      >
-        <div class="column large-7 medium-full contact-social">
-          <h4>Social</h4>
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ismailkraou/"
-                title="LinkedIn"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- end contact-infos -->
-    </section>
-    <!-- end s-contact -->
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-      <div class="row">
-        <div class="column large-full ss-copyright">
-          <span>© Copyright Ismail K. 2023</span>
-          <span>
-            Designed by
-            <a href="https://www.linkedin.com/in/ismailkraou/">Ismail K.</a>
-          </span>
-        </div>
-
-        <div class="ss-go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top"></a>
-        </div>
-      </div>
     </footer>
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
+    <script src="js/index.js"></script>
+</body>
 
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              title="Close (Esc)"
-            ></button>
-            <button
-              class="pswp__button pswp__button--share"
-              title="Share"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              title="Toggle fullscreen"
-            ></button>
-            <button
-              class="pswp__button pswp__button--zoom"
-              title="Zoom in/out"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
-          >
-            <div class="pswp__share-tooltip"></div>
-          </div>
-          <button
-            class="pswp__button pswp__button--arrow--left"
-            title="Previous (arrow left)"
-          ></button>
-          <button
-            class="pswp__button pswp__button--arrow--right"
-            title="Next (arrow right)"
-          ></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end photoSwipe background -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="plugins.js"></script>
-    <script src="main.js"></script>
-  </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ismail K.</title>
+    <meta name="description" content="Get in touch for high-performance frontend development and digital solutions.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .contact-page { margin: 150px auto 100px; max-width: 800px; padding: 0 2rem; }
+        .contact-header { text-align: center; margin-bottom: 4rem; }
+        .contact-header h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--clr-text); }
+        .contact-header p { font-size: 1.2rem; color: rgba(255,255,255,0.7); }
+        
+        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 4rem; }
+        
+        #contact-form { background: var(--clr-glass-bg); border: 1px solid var(--clr-glass-border); border-radius: 20px; padding: 3rem; backdrop-filter: blur(12px); }
+        
+        .form-status { margin-top: 1rem; padding: 1rem; border-radius: 10px; display: none; text-align: center; }
+        .form-status.success { display: block; background: rgba(4, 120, 87, 0.2); color: var(--clr-accent-emerald); }
+        .form-status.error { display: block; background: rgba(220, 38, 38, 0.2); color: #ef4444; }
+
+        @media (max-width: 600px) {
+            .contact-header h1 { font-size: 2.5rem; }
+            #contact-form { padding: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">IK<span>.</span></a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="close-icon" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer" class="active" style="color: var(--clr-accent-gold);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <header class="contact-header reveal">
+            <h1>Let's Connect</h1>
+            <p>Have a project in mind? Let's build something extraordinary together.</p>
+        </header>
+
+        <div class="contact-grid">
+            <form id="contact-form" action="https://formspree.io/f/mojyovee" method="POST" class="modern-form reveal">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="btn magnetic-btn" style="width: 100%;">Send Message</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+
+        <div style="margin-top: 4rem; text-align: center;" class="reveal">
+            <a href="index.html" class="back-link" style="text-decoration: none; color: var(--clr-text); border-bottom: 1px solid var(--clr-accent-emerald); padding-bottom: 5px;">&larr; Back to Home</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">IK<span>.</span></a>
+                <p>Frontend Developer based in Morocco.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/ismailkraou" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/ismailkraou/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://comeup.com/fr/@ismailk" target="_blank" rel="noopener noreferrer">ComeUp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ismail K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script>
+        // AJAX Form Submission
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                submitBtn.disabled = true;
+                submitBtn.innerText = 'Sending...';
+                
+                const data = new FormData(e.target);
+                
+                try {
+                    const response = await fetch(e.target.action, {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        window.location.href = 'thanks.html';
+                    } else {
+                        const errorData = await response.json();
+                        status.innerText = errorData.errors ? errorData.errors.map(error => error.message).join(", ") : "Oops! There was a problem submitting your form";
+                        status.className = 'form-status error';
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = 'Send Message';
+                    }
+                } catch (error) {
+                    status.innerText = "Oops! There was a problem submitting your form";
+                    status.className = 'form-status error';
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
