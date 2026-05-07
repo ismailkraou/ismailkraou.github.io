@@ -1,6 +1,6 @@
 <div align="center">
 
-# Ismail Kraou — Frontend Developer Portfolio
+# Ismail K. — Frontend Developer Portfolio
 
 **Building high-performance web experiences with precision, craft, and modern AI-powered workflows.**
 
@@ -21,7 +21,7 @@
 
 ## 👋 About Me
 
-I'm **Ismail Kraou**, a passionate **Frontend & WordPress Developer** based in Morocco with **8+ years of experience** crafting fast, beautiful, and conversion-focused digital products. I specialize in building high-performance websites and web applications for clients across France, Spain, Morocco, and Turkey.
+I'm **Ismail K.**, a passionate **Frontend & WordPress Developer** based in Morocco with **8+ years of experience** crafting fast, beautiful, and conversion-focused digital products. I specialize in building high-performance websites and web applications for clients across France, Spain, Morocco, and Turkey.
 
 > I leverage modern development workflows — including **AI-assisted tooling** — to ship polished, production-ready websites faster and smarter, without sacrificing quality or attention to detail.
 
@@ -150,6 +150,6 @@ I'm actively looking for new opportunities. If you're a recruiter or hiring mana
 
 **Built with 💚 precision, modern tooling, and a relentless focus on quality.**
 
-*© 2025 Ismail Kraou. All rights reserved.*
+*© 2025 Ismail K. All rights reserved.*
 
 </div>

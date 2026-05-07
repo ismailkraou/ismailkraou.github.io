@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flux Case Study | Ismail K.</title>
-    <meta name="description" content="A responsive website designed using modern TailwindCSS and JS.">
+    <title>Flux Cinematique Case Study | Ismail K.</title>
+    <meta name="description" content="A responsive website for premium cinematic and architectural photography, designed using modern CSS and JS.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Flux Cinematique Case Study | Ismail K.">
+    <meta property="og:description" content="Premium cinematic photography showcase with high-end visual precision.">
+    <meta property="og:image" content="https://ismailkraou.github.io/images/og-preview.png">
+    <meta property="og:url" content="https://ismailkraou.github.io/project-flux.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +23,15 @@
         .case-study-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--clr-text); }
         .case-study-hero .tagline { font-size: 1.2rem; color: rgba(255,255,255,0.7); }
         .case-study-content { max-width: 800px; margin: 0 auto 100px; padding: 0 2rem; }
-        .case-study-content h2 { color: #FF0000; margin: 3rem 0 1rem; font-size: 2rem; }
+        .case-study-content h2 { color: #b91c1c; margin: 3rem 0 1rem; font-size: 2rem; }
         .case-study-content p { font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8; color: rgba(255,255,255,0.85); }
         
         .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
         .summary-item { padding: 2rem; background: var(--clr-glass-bg); border: 1px solid var(--clr-glass-border); border-radius: 15px; }
-        .summary-item h3 { color: #FF0000; font-size: 1.1rem; margin-bottom: 1rem; }
+        .summary-item h3 { color: #b91c1c; font-size: 1.1rem; margin-bottom: 1rem; }
         
-        .back-link { display: inline-block; margin-top: 2rem; color: var(--clr-text); text-decoration: none; border-bottom: 1px solid #FF0000; padding-bottom: 5px; transition: color 0.3s; }
-        .back-link:hover { color: #FF0000; border-color: #FF0000; }
+        .back-link { display: inline-block; margin-top: 2rem; color: var(--clr-text); text-decoration: none; border-bottom: 1px solid #b91c1c; padding-bottom: 5px; transition: color 0.3s; }
+        .back-link:hover { color: #b91c1c; border-color: #b91c1c; }
     </style>
 </head>
 <body>
@@ -42,7 +49,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#work">Work</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -93,10 +100,20 @@
         <div style="text-align: center; margin-top: 4rem; display: flex; flex-direction: column; align-items: center; gap: 2rem;" class="reveal">
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="https://ismailkraou.github.io/flux/" target="_blank" class="btn magnetic-btn">Visit Live Site</a>
-                <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn" style="background: var(--clr-glass-bg); border: 1px solid #FF0000;">Contact Me</a>
+                <a href="contact.html" class="btn magnetic-btn" style="background: var(--clr-glass-bg); border: 1px solid #b91c1c;">Contact Me</a>
             </div>
             <a href="index.html#work" class="back-link">&larr; Back to Portfolio</a>
         </div>
+        <nav class="case-study-nav reveal">
+            <a href="project-digikma.html">
+                <span class="nav-label">&larr; Previous Project</span>
+                <span class="nav-title">Digikma</span>
+            </a>
+            <a href="project-mybodylymph.html">
+                <span class="nav-label">Next Project &rarr;</span>
+                <span class="nav-title">My Body Lymph</span>
+            </a>
+        </nav>
     </main>
 
     <footer class="site-footer">

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ismailkraou.github.io/sitemap.xml

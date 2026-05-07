@@ -502,3 +502,151 @@ body {
         margin-bottom: 2rem;
     }
 }
+
+/* ===================== Filter Bar ===================== */
+.filter-bar {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.4rem;
+    border-radius: 50px;
+    border: 1px solid var(--clr-glass-border);
+    background: var(--clr-glass-bg);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--font-main);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.filter-btn:hover {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: var(--clr-accent-emerald);
+    color: white;
+    border-color: var(--clr-accent-emerald);
+    box-shadow: 0 4px 15px rgba(4, 120, 87, 0.35);
+}
+
+.project-card.hidden-card {
+    display: none;
+}
+
+/* ===================== Scroll-to-Top ===================== */
+#scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--clr-accent-emerald);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, box-shadow 0.3s;
+    z-index: 998;
+    box-shadow: 0 4px 15px rgba(4, 120, 87, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(4, 120, 87, 0.6);
+}
+
+/* ===================== Nav Active State ===================== */
+.nav-links a.active {
+    color: var(--clr-accent-gold);
+}
+
+/* ===================== Case Study Prev/Next Nav ===================== */
+.case-study-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--clr-glass-border);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.case-study-nav a {
+    color: var(--clr-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 45%;
+}
+
+.case-study-nav a:last-child {
+    text-align: right;
+}
+
+.case-study-nav a:hover {
+    color: var(--clr-accent-gold);
+}
+
+.case-study-nav .nav-label {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.case-study-nav .nav-title {
+    color: inherit;
+}
+
+/* ===================== Prefers Reduced Motion ===================== */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .magnetic-btn,
+    .bento-item,
+    .filter-btn,
+    #scroll-top {
+        transition: none;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

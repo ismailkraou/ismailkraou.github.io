@@ -4,9 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ismail Kraou | Senior Front-End Developer</title>
-    <meta name="description"
-        content="Senior Front-End Developer portfolio crafting digital experiences with Moroccan precision.">
+    <title>Ismail K. | Frontend Developer Morocco</title>
+    <meta name="description" content="Senior Frontend Developer based in Morocco — crafting high-performance, pixel-perfect digital experiences with React, Next.js, and WordPress.">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ismailkraou.github.io/">
+    <meta property="og:title" content="Ismail K. | Frontend Developer">
+    <meta property="og:description" content="Senior Frontend Developer based in Morocco — 9+ years building high-performance web experiences.">
+    <meta property="og:image" content="https://ismailkraou.github.io/images/og-preview.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ismail K. | Frontend Developer">
+    <meta name="twitter:description" content="Senior Frontend Developer based in Morocco — 9+ years building high-performance web experiences.">
+    <meta name="twitter:image" content="https://ismailkraou.github.io/images/og-preview.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +52,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#work">Work</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -53,7 +66,7 @@
             <h1>Engineering High-Performance Interfaces with <span class="accent-gold">Precision</span>.</h1>
             <p>Frontend Developer and Web Developer based in Morocco. My passion and goal is to help you create
                 exceptional digital experiences.</p>
-            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn">Let's Talk</a>
+            <a href="contact.html" class="btn magnetic-btn">Let's Talk</a>
         </div>
 
         <div class="bento-item skills reveal">
@@ -81,10 +94,16 @@
     <!-- Work Section -->
     <section id="work" class="work-section">
         <h2 class="section-title reveal">Selected Work</h2>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="wordpress">WordPress</button>
+            <button class="filter-btn" data-filter="landing-page">Landing Page</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        </div>
         <div class="project-grid">
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress">
                 <a href="project-adsocial.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/adsocial.png" alt="AdSocial website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/adsocial.png" alt="AdSocial website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>AdSocial</h3>
                         <p>A digital marketing agency platform specializing in social media and online advertising
@@ -95,9 +114,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="landing-page">
                 <a href="project-kliner.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/kliner.png" alt="Kliner For Business website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/kliner.png" alt="Kliner For Business website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Kliner For Business</h3>
                         <p>A professional cleaning service platform connecting businesses with trusted partners through
@@ -108,9 +127,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress">
                 <a href="project-digikma.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/digikma.png" alt="Digikma website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/digikma.png" alt="Digikma website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Digikma</h3>
                         <p>A CMS-driven digital marketing platform designed for scalable content strategy and engagement
@@ -121,9 +140,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="landing-page">
                 <a href="project-flux.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/flux.png" alt="Flux Cinematique website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/flux.png" alt="Flux Cinematique website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Flux Cinematique</h3>
                         <p>A premium cinematic and architectural photography showcase designed with high-end visual
@@ -134,9 +153,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress">
                 <a href="project-mybodylymph.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/mybodylymph.png" alt="My Body Lymph website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/mybodylymph.png" alt="My Body Lymph website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>My Body Lymph</h3>
                         <p>A sophisticated wellness platform specializing in the Renata França method and luxury body
@@ -147,9 +166,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress landing-page">
                 <a href="project-lyonmma.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/lyonmma.png" alt="Lyon MMA Center website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/lyonmma.png" alt="Lyon MMA Center website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Lyon MMA Center</h3>
                         <p>A bold, high-energy platform for a premier martial arts academy, optimized for student
@@ -160,9 +179,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress ecommerce">
                 <a href="project-alcasserauto.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/alcasserauto.png" alt="Alcasser Auto website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/alcasserauto.png" alt="Alcasser Auto website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Alcasser Auto</h3>
                         <p>A dynamic automotive dealership platform featuring a robust catalog of high-quality used
@@ -173,9 +192,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="ecommerce">
                 <a href="project-yaz.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/yaz.png" alt="Yaz Car website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/yaz.png" alt="Yaz Car website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Yaz Car</h3>
                         <p>An e-commerce and catalog site for specialized automotive services and high-quality vehicle
@@ -186,9 +205,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="ecommerce">
                 <a href="project-infosystem.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/infosystem.png" alt="I-Info System website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/infosystem.png" alt="I-Info System website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>I-Info System</h3>
                         <p>A robust e-commerce storefront for IT hardware, professional office equipment, and computer
@@ -199,9 +218,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress">
                 <a href="project-webdevsite.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/webdevsite.png" alt="WebDevSite website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/webdevsite.png" alt="WebDevSite website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>WebDevSite</h3>
                         <p>A high-end digital agency portfolio showcasing excellence in WordPress engineering and
@@ -212,9 +231,9 @@
                     </div>
                 </a>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card reveal" data-category="wordpress">
                 <a href="project-hikayat.html" style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/hikayat.png" alt="Hikayat Al Insan website screenshot" class="project-image" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
+                    <img src="images/hikayat.png" alt="Hikayat Al Insan website screenshot" class="project-image" loading="lazy" style="width:100%; height:220px; object-fit:cover; object-position:top; border-radius:12px 12px 0 0;">
                     <div class="project-info">
                         <h3>Hikayat Al Insan</h3>
                         <p>An immersive cultural platform sharing human narratives through minimalist and artistic
@@ -259,7 +278,7 @@
                         <a href="https://www.linkedin.com/in/ismailkraou" target="_blank" rel="noopener noreferrer"
                             class="btn accent-btn"
                             style="padding: 0.6rem 1rem; font-size: 0.85rem; width: 100%;">LinkedIn Profile</a>
-                        <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn"
+                        <a href="contact.html" class="btn magnetic-btn"
                             style="padding: 0.6rem 1rem; font-size: 0.85rem; width: 100%;">Contact Me</a>
                     </div>
                 </div>
@@ -268,11 +287,11 @@
                         dynamic, user-centric websites and web applications. My journey began in 2016, and since then, I
                         have evolved from core HTML/CSS to mastering the modern JavaScript ecosystem, including React.js
                         and Next.js.</p>
-                    <p>Currently serving as a **Frontend Developer at Prilow**, I combine the structural discipline of a
+                    <p>Currently serving as a <strong>Frontend Developer at Prilow</strong>, I combine the structural discipline of a
                         seasoned developer with the aesthetic eye of a UI designer. I specialize in transforming complex
                         business requirements into seamless, high-converting digital products that deliver measurable
                         results.</p>
-                    <p>Fluent in **English, Arabic, and French**, I am highly compatible with global remote work and
+                    <p>Fluent in <strong>English, Arabic, and French</strong>, I am highly compatible with global remote work and
                         dedicated to helping businesses establish a powerful, fast-loading digital presence.</p>
                 </div>
             </div>
@@ -301,7 +320,7 @@
                 Ready to build something amazing? Whether it's a personal project or a business venture, I can help you
                 stand out.
             </p>
-            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="btn magnetic-btn">Get In Touch</a>
+            <a href="contact.html" class="btn magnetic-btn">Get In Touch</a>
         </div>
     </section>
 
@@ -323,6 +342,9 @@
             <p>&copy; 2026 Ismail K. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" aria-label="Scroll to top">&#8679;</button>
 
     <script src="js/index.js"></script>
 </body>
